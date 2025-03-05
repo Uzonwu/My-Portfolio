@@ -76,7 +76,7 @@ span {
         border-bottom: 3px solid var(--main-color);
     }
 
-.contact-link{
+.contact-link {
     display: none;
 }
 
@@ -134,11 +134,13 @@ section {
         line-height: 1.8;
     }
 
-.home-img img {
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px var(--main-color);
-    transition: 0.4s ease-in-out;
+.home-3d {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
 }
 
     .home-img img:hover {
@@ -451,21 +453,25 @@ about-content .btn {
             margin: 3rem 0;
             color: var(--text-color);
         }
+
         .navbar .contact-link {
             display: block;
         }
+
         .navbar .gradient-btn {
             display: inline-block;
             margin-top: 2rem;
             width: 80%;
             font-size: 2rem;
         }
-        .gradient-btn {
-            display: none;
-        }
-        .navbar.active {
-            display: block;
-        }
+
+    .gradient-btn {
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
 
     .home {
         flex-direction: column-reverse;
